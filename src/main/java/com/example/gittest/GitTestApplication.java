@@ -25,4 +25,8 @@ public class GitTestApplication {
     public String getA() {
         return "A";
     }
+
+    public String getB() {
+        return "B";
+    }
 }

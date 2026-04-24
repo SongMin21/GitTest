@@ -7,14 +7,19 @@
         body {
             font-family: sans-serif;
             text-align: center;
-            padding-top: 50px;
+            /*padding-top: 50px;*/
             margin: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
         .content {
-            flex: 1;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
         }
         footer {
             background-color: #f8f9fa;
@@ -25,32 +30,6 @@
         }
         h1 { color: #2c3e50; }
         p { color: #7f8c8d; }
-    </style>
-</head>
-<body>
-<header>
-    <button class="login-btn" onclick="alert('로그인')">로그인</button>
-</header>
-<div class="content">
-    <h1>🎉 축하합니다! 배포에 성공하셨습니다!</h1>
-    <p>CodeRabbit + Slack + GitHub Pages 조합을 완성하셨네요.</p>
-    <p>이 웹사이트는 전 세계 어디서든 이 URL로 접속할 수 있습니다.</p>
-    <p>이건 feature/PR 테스트 코드입니다.</p>
-</div>
-<footer>
-    &copy; 2026 비전공자 수업 데모. All rights reserved.
-</footer>
-</body>
-<html>
-<head>
-    <title>비전공자 수업 데모</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            display: flex;
-            height: 100vh;
-        }
         /* 사이드바 스타일 */
         nav {
             width: 200px;
@@ -71,17 +50,26 @@
         nav li:hover {
             background-color: #34495e;
         }
-        /* 메인 콘텐츠 스타일 */
         main {
-            flex-grow: 1;
-            padding: 50px;
-            text-align: center;
+            margin: 50px auto;
         }
-        h1 { color: #2c3e50; }
-        p { color: #7f8c8d; }
+        header {
+            background: #f8f8f8;
+            margin: 0;
+            height: 50px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 30px;
+        }
     </style>
 </head>
 <body>
+
+<header>
+    <button class="login-btn" onclick="alert('로그인')">로그인</button>
+</header>
+<div class="content">
 <nav>
     <ul>
         <li>🏠 홈</li>
@@ -94,8 +82,11 @@
     <h1>🎉 축하합니다! 배포에 성공하셨습니다!</h1>
     <p>CodeRabbit + Slack + GitHub Pages 조합을 완성하셨네요.</p>
     <p>이 웹사이트는 전 세계 어디서든 이 URL로 접속할 수 있습니다.</p>
-
     <p>이건 feature/PR 테스트 코드입니다.</p>
 </main>
+</div>
+<footer>
+    &copy; 2026 비전공자 수업 데모. All rights reserved.
+</footer>
 </body>
-</html>
+<html>

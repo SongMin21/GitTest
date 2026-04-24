@@ -19,6 +19,6 @@ public class GitTestApplication {
     }
 
     public String getStatus() {
-        return "Application is running2";
+        return "Application is running1";
     }
 }

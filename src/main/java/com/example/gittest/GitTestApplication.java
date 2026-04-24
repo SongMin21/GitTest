@@ -30,7 +30,7 @@ public class GitTestApplication {
         return "B";
     }
 
-    public String getC() {
-        return "C";
+    public String getD() {
+        return "D";
     }
 }
